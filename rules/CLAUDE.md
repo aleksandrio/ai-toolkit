@@ -10,6 +10,7 @@ installed block by hand: change this file, bump the package version and publish.
 | When | Use |
 |---|---|
 | Reviewing a diff or a PR before merge | `/code-review` |
+| Before opening a pull request | `/code-review` on `git diff <base>...HEAD`; fix every Critical finding first |
 
 ## Working rules
 
@@ -19,5 +20,7 @@ installed block by hand: change this file, bump the package version and publish.
 - Never commit secrets, tokens or `.npmrc` entries with `_authToken`.
 - Keep changes small and reviewable; run the project's tests before proposing a
   commit.
+- Run `/code-review` before opening a pull request and paste its verdict
+  (`APPROVE` / `REQUEST CHANGES` / `NEEDS DISCUSSION`) into the PR description.
 - When a team rule looks wrong for this repository, say so and propose a change
   to the toolkit instead of silently ignoring it.
