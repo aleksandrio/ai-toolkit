@@ -1,6 +1,6 @@
 {
   "name": "@aleksandrio/ai-toolkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Team AI skills, rules and installer for Claude Code, distributed through GitHub Packages",
   "license": "MIT",
   "type": "commonjs",
