@@ -1,0 +1,32 @@
+{
+  "name": "@aleksandrio/ai-toolkit",
+  "version": "0.1.0",
+  "description": "Team AI skills, rules and installer for Claude Code, distributed through GitHub Packages",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksandrio/ai-toolkit.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "files": [
+    "skills/",
+    "rules/",
+    "install.js",
+    "uninstall.js",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "bin": {
+    "ai-toolkit": "./install.js",
+    "ai-toolkit-uninstall": "./uninstall.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
